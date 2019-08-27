@@ -1,0 +1,257 @@
+.section06 {
+  @extend %section-rules;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.section06__first {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.section06__first--text{
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.section06__h3 {
+  width: 230px;
+  padding-left: 54px;
+  font-family: 'Acrom';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+
+  @media (min-width: 768px) {
+    width: 224px;
+    font-size: 27px;
+    padding-left: 0;  
+  }
+  @media (min-width: 1200px) {
+    font-size: 30px;
+  }
+}
+
+.section06__p {
+  position: relative;
+  width: 340px;
+  margin: 0 auto 33px;
+  font-family: 'Acrom';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13.5px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 21px;
+    height: 3px;
+    left: -35px;
+    top: 8px;
+    background-color: $primary-black-color;
+  }
+
+  @media (min-width: 768px) {
+    width: 155px;
+    font-size: 9px;
+    color: $primary-black-color;
+  }
+  @media (min-width: 1200px) {
+    font-size: 10px;
+  }
+}
+
+.section06__image1 img,
+.section06__image2 img {
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.section06__second {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    
+  }
+}
+
+.section06__image2{
+  order: 2;
+  @media (min-width: 768px) {
+    order: 1;
+  }
+}
+
+.section06__second--text1{
+  order: 1;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+    order: 2;
+  }
+}
+
+.section06__h4 {
+  position: relative;
+  width: 130px;
+  font-family: 'Acrom';
+  font-weight: 900;
+  font-style: normal;
+  font-size: 13.5px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-left: 25px;
+  margin-bottom: 20px;
+
+  & > mark{
+    line-height: 1.1;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: $primary-white-color;
+    background-color: $primary-black-color;
+  }
+
+  & > span {
+    color: $primary-white-color;
+    background-color: $primary-black-color;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 9px;
+    margin-left: 0;
+  }
+  @media (min-width: 1200px) {
+    font-size: 10px;
+  }
+}
+
+.section06__p--0{
+  display: flex;
+  flex-direction: column;
+}
+
+.section06__p--1 {
+  width: 360px;
+  font-family: 'Acrom';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 13.5px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+
+  @media (min-width: 768px) {
+    font-size: 9px;
+    width: 170px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 10px;
+  }
+}
+
+.section06__p--2 {
+  width: 84%;
+  font-family: 'Acrom';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13.5px;
+  color: $secondary-black-color;
+  margin-left: 25px;
+  margin-bottom: 42px;
+
+  @media (min-width: 768px) {
+    font-size: 8px;
+    width: 170px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 9px;
+  }
+}
+
+.section06__second--text2{
+  order: 3;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+    order: 3;
+  }
+}
+
+.section__h4--1 {
+  width: 190px;
+  font-family: 'Acrom';
+  font-weight: 900;
+  font-style: normal;
+  font-size: 13.5px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin-left: 25px;
+  margin-bottom: 20px;
+
+  & > span {
+    color: $primary-white-color;
+    background-color: $primary-black-color;
+  }
+  @media (min-width: 768px) {
+    width: 110px;
+    font-size: 9px;
+    margin-left: 0;
+  }
+}
+
+.section06__p--3 {
+  width: 72%;
+  font-family: 'Acrom';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 13.5px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+
+  @media (min-width: 768px) {
+    font-size: 9px;
+    width: 170px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 10px;
+  }
+}
+
+.section06__p--4 {
+  width: 74%;
+  font-family: 'Acrom';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13.5px;
+  color: $secondary-black-color;
+  margin-left: 25px;
+  margin-bottom: 42px;
+
+  @media (min-width: 768px) {
+    font-size: 8px;
+    width: 170px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 9px;
+  }
+}
+
+@media (min-width: 480px) {
+  .section06 {
+    margin-bottom: 20px;
+  }
+}

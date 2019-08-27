@@ -1,0 +1,502 @@
+.header {
+  min-width: 480px;
+  height: 612px;
+  margin-bottom: 50px;
+  background: $main-bg-color;
+}
+
+.header__bg {
+  width: 446px;
+  height: 612px;
+  margin: 0 auto;
+  background: url(../images/480/header_bg-goit.png),
+    url(../images/480/header_bg-center-color.png);
+  background-position: 50% 254px, 50% 0;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 153px;
+    height: 612px;
+    border: 1px dotted rgba($color: #ffffff, $alpha: 0.05);
+    border-top: none;
+    border-bottom: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    width: 153px;
+    height: 612px;
+    border: 1px dotted rgba($color: #ffffff, $alpha: 0.05);
+    border-top: none;
+    border-bottom: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header__bg {
+    background: url(../images/480/header_bg-goit@2x.png) 2x,
+      url(../images/480/header_bg-center-color.png) 2x;
+  }
+}
+
+.header__foo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.header__top {
+  width: 446px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title-1 {
+  width: 268px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+  text-transform: uppercase;
+  @include fonts(900, 30px, 39px);
+  color: $primary-white-color;
+}
+
+.header__descr-1 {
+  width: 370px;
+  margin: 0 auto;
+  margin-bottom: 158px;
+  text-align: center;
+  text-transform: uppercase;
+  @include fonts(700, 13.5px, 20px);
+  letter-spacing: -0.025em;
+  color: $primary-white-color;
+  position: relative;
+
+  &::before {
+    display: block;
+    content: '\003C';
+    color: $active-color;
+    font-size: 22.5px;
+    line-height: 11.71px;
+    position: absolute;
+    right: 380px;
+  }
+
+  &::after {
+    display: block;
+    content: '/\003E';
+    color: $active-color;
+    font-size: 22.5px;
+    line-height: 11.71px;
+    position: absolute;
+    left: 382px;
+    bottom: 0;
+  }
+}
+
+.header__title-2 {
+  width: 370px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  padding-right: 30px;
+  text-transform: uppercase;
+  @include fonts(900, 13.5px, 19.5px);
+  color: $primary-white-color;
+}
+
+.header__descr-2 {
+  width: 370px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  @include fonts(400, 13.5px, 19.5px);
+  color: $primary-white-color;
+}
+
+.header__button {
+  width: 219px;
+  height: 54px;
+  margin: 0 auto;
+  border: none;
+  background: $orange-color;
+  text-transform: uppercase;
+  @include fonts(900, 12px, 18px);
+  letter-spacing: 0.1em;
+  color: $primary-white-color;
+  cursor: pointer;
+  box-shadow: 0 5px 6px rgba(196, 87, 15, 0.26);
+
+  &:hover {
+    background-color: $accent-blue-color;
+    box-shadow: 0 5px 6px rgba(23, 236, 255, 0.26);
+    transition: background-color 0.2s linear;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $active-color;
+    box-shadow: 0 5px 6px rgba(9, 164, 178, 0.26);
+    transition: background-color 0.1s linear;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    min-width: 640px;
+    height: 474px;
+    background: none;
+    background: $main-bg-color;
+    margin-bottom: 105px;
+  }
+
+  .header__bg {
+    width: 640px;
+    height: 474px;
+    margin: 0 auto;
+    background: url(../images/768/header_bg-two-boys.png),
+      url(../images/768/header_numbers.png),
+      url(../images/768/header_bg-goit.png),
+      url(../images/768/header_bg-center-color.png);
+    background-repeat: no-repeat;
+    background-position: 100% 101%, 0 403px, 50% 152px, 50% 0;
+    position: relative;
+
+    &::before {
+      width: 219px;
+      height: 100%;
+    }
+
+    &::after {
+      width: 219px;
+      height: 100%;
+    }
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .header__bg {
+      background: url(../images/768/header_bg-two-boys@2x.png) 2x,
+        url(../images/768/header_numbers@2x.png) 2x,
+        url(../images/768/header_bg-goit@2x.png) 2x,
+        url(../images/768/header_bg-center-color.png) 2x;
+    }
+  }
+
+  .header__top {
+    width: 640px;
+    margin-bottom: 50px;
+    padding-top: 21px;
+  }
+
+  .header__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .header__title-1 {
+    width: 358px;
+    @include fonts(900, 45px, 56.08px);
+    margin-bottom: 32px;
+
+    &--begin::after {
+      display: inline-block;
+      content: '';
+      width: 46px;
+      height: 8px;
+      margin-left: 21px;
+      margin-bottom: 11px;
+      background-color: $primary-white-color;
+    }
+
+    &--line {
+      display: none;
+    }
+
+    &--end {
+      display: inline-block;
+      padding-left: 80px;
+      position: relative;
+
+      &::before {
+        display: inline-block;
+        content: '';
+        width: 57px;
+        height: 8px;
+        background-color: $primary-white-color;
+        vertical-align: middle;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .header__descr-1 {
+    width: 173px;
+    margin: 0 auto;
+    margin-left: 55px;
+    margin-bottom: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    @include fonts(700, 8px, 13.46px);
+    letter-spacing: 0;
+    color: $primary-white-color;
+    position: relative;
+
+    &::before {
+      right: 185px;
+      top: -10%;
+      font-size: 13.46px;
+      line-height: 16.82px;
+    }
+
+    &::after {
+      left: 185px;
+      bottom: -10%;
+      font-size: 13.46px;
+      line-height: 16.82px;
+    }
+  }
+
+  .header__box--title-2 {
+    margin-left: 50px;
+  }
+
+  .header__title-2 {
+    width: 150px;
+    margin: 0;
+    margin-bottom: 12px;
+    padding-right: 0;
+    @include fonts(900, 10.5px, 16.82px);
+    order: 10;
+  }
+
+  .header__descr-2 {
+    width: 150px;
+    margin: 0;
+    @include fonts(400, 10px, 13.46px);
+  }
+
+  .header__button {
+    width: 110px;
+    height: 29px;
+    @include fonts(900, 7px, 10.09px);
+    margin: 0;
+    margin-left: 55px;
+  }
+
+  .header__social {
+    display: flex;
+    justify-content: space-between;
+    width: 35px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 311px;
+  }
+
+  .header__facebook {
+    display: block;
+    content: url(../images/768/header_social-facebook.png);
+    width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+    position: center;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .header__facebook {
+      background: url(../images/768/header_social-facebook@2x.png) 2x;
+    }
+  }
+
+  .header__twitter {
+    display: block;
+    content: url(../images/768/header_social-twitter.png);
+    width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+    position: center;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .header__twitter {
+      background: url(../images/768/header_social-twitter@2x.png) 2x;
+    }
+  }
+}
+
+// min-width: 1200px
+
+@media (min-width: 1200px) {
+  .header {
+    min-width: 1200px;
+    height: 529px;
+    background: none;
+    background: $main-bg-color;
+    margin-bottom: 125px;
+  }
+
+  .header__bg {
+    width: 1126px;
+    height: 530px;
+    background: url(../images/768/header_bg-two-boys.png),
+      url(../images/1200/header_numbers.png),
+      url(../images/1200/header_bg-goit.png),
+      url(../images/1200/header_bg-center-color.png);
+    background-repeat: no-repeat;
+    background-position: 455px 100%, 0 451px, 50% 172px, 50% 0;
+    position: relative;
+
+    &::before {
+      width: 243px;
+      height: 100%;
+      left: 207px;
+    }
+
+    &::after {
+      width: 243px;
+      height: 100%;
+      right: 207px;
+    }
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .header__bg {
+      background: url(../images/768/header_bg-two-boys@2x.png) 2x,
+        url(../images/1200/header_numbers@2x.png) 2x,
+        url(../images/1200/header_bg-goit@2x.png) 2x,
+        url(../images/1200/header_bg-center-color.png) 2x;
+    }
+  }
+
+  .header__foo {
+    height: 100%;
+  }
+
+  .header__top {
+    width: 1126px;
+    margin-bottom: 47px;
+    padding-top: 30px;
+  }
+
+  .header__box {
+    width: 714px;
+    margin: 0 auto;
+  }
+
+  .header__title-1 {
+    width: 398px;
+    @include fonts(900, 50px, 62.5px);
+    margin-bottom: 32px;
+
+    &--begin::after {
+      width: 50px;
+      margin-left: 25px;
+    }
+
+    &--end {
+      padding-left: 90px;
+
+      &::before {
+        width: 64px;
+      }
+    }
+  }
+
+  .header__descr-1 {
+    width: 189px;
+    margin-left: 62px;
+    @include fonts(700, 8, 75px, 15px);
+    position: relative;
+
+    &::before {
+      right: 202px;
+      top: -10%;
+      font-size: 15px;
+      line-height: 18.75px;
+    }
+
+    &::after {
+      left: 212px;
+      bottom: -10%;
+      font-size: 15px;
+      line-height: 18.75px;
+    }
+  }
+
+  .header__title-2 {
+    width: 164px;
+    margin: 0;
+    margin-bottom: 18px;
+    padding-right: 0;
+    @include fonts(900, 11.25px, 18.75px);
+    order: 10;
+  }
+
+  .header__descr-2 {
+    margin: 0;
+    @include fonts(400, 10px, 15px);
+  }
+
+  .header__button {
+    width: 123px;
+    height: 33px;
+    @include fonts(900, 6.88px, 11.25px);
+    margin-left: 61px;
+  }
+
+  .header__social {
+    width: 40px;
+    height: 12px;
+    position: absolute;
+    top: 480px;
+  }
+
+  .header__facebook {
+    display: block;
+    content: url(../images/1200/header_social-facebook.png);
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    position: center;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .header__facebook {
+      background: url(../images/1200/header_social-facebook@2x.png) 2x;
+    }
+  }
+
+  .header__twitter {
+    display: block;
+    content: url(../images/1200/header_social-twitter.png);
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    position: center;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .header__twitter {
+      background: url(../images/1200/header_social-twitter@2x.png) 2x;
+    }
+  }
+}

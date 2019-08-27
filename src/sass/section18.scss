@@ -1,0 +1,275 @@
+.section18 {
+  @extend %section-rules;
+  margin-bottom: 40px;
+
+  &__first {
+    width: 201px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  &__first--text1 {
+    font-family: 'Acrom';
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $primary-black-color;
+    padding-left: 15px;
+    padding-right: 16px;
+    padding-bottom: 21px;
+  }
+
+  &__first--text2 {
+    position: relative;
+    font-family: 'Acrom';
+    font-size: 15px;
+    font-weight: bold;
+    color: $primary-black-color;
+    padding-left: 29px;
+    padding-bottom: 32px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 3px;
+      background-color: $primary-black-color;
+      top: 8px;
+      left: 1px;
+    }
+  }
+
+  &__first--button {
+    width: 217px;
+    height: 42px;
+    border: none;
+    cursor: pointer;
+    background-color: $orange-color;
+    -webkit-box-shadow: 0 5px 6px rgba(196, 87, 15, 0.26);
+    -moz-box-shadow: 0 5px 6px rgba(196, 87, 15, 0.26);
+    box-shadow: 0 5px 6px rgba(196, 87, 15, 0.26);
+  }
+
+  &__first--button--text {
+    font-family: 'Acrom';
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+
+  &__second {
+    width: 306px;
+    margin: 0 auto;
+  }
+
+  &__second--text1 {
+    font-family: 'Acrom';
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $primary-black-color;
+    padding-bottom: 12px;
+  }
+
+  &__second--text2 {
+    font-family: 'Acrom';
+    font-size: 13px;
+    font-weight: bold;
+    color: $primary-black-color;
+    line-height: 19px;
+    padding-right: 33px;
+    padding-bottom: 25px;
+  }
+
+  &__second--text3 {
+    font-family: 'Acrom';
+    font-size: 13px;
+    font-weight: bold;
+    color: $secondary-black-color;
+    padding-right: 5px;
+    padding-bottom: 25px;
+  }
+
+  &__second--text4 {
+    font-family: 'Acrom';
+    font-size: 13px;
+    font-weight: bold;
+    color: $secondary-black-color;
+    padding-bottom: 20px;
+
+    & > span {
+      color: $primary-black-color;
+    }
+  }
+  
+  &__second--text5 {
+    font-family: Acrom;
+    font-size: 13px;
+    color: $orange-color;
+    padding-left: 170px;
+  }
+}
+@media (min-width: 480px) {
+  .section18 {
+    margin-bottom: 40px;
+  }
+}
+
+.section18 {
+  @media (min-width: 768px) {
+    width: 640px;
+    padding: 0;
+
+    &__wrraper {
+      width: 640px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__first {
+      width: 280px;
+      margin: 0;
+    }
+
+    &__first--text1 {
+      font-size: 27px;
+      padding-left: 0px;
+      padding-bottom: 30px;
+    }
+
+    &__first--text2 {
+      position: relative;
+      font-size: 9px;
+      padding-left: 50px;
+      padding-right: 21px;
+
+      &::before {
+        position: absolute;
+        width: 28px;
+        height: 3px;
+      }
+    }
+
+    &__first--button {
+      width: 146px;
+      height: 28px;
+      background-color: $orange-color;
+      -webkit-box-shadow: 0 7px 10px rgba(196, 87, 15, 0.26);
+      -moz-box-shadow: 0 7px 10px rgba(196, 87, 15, 0.26);
+      box-shadow: 0 7px 10px rgba(196, 87, 15, 0.26);
+      margin-left: 44px;
+    }
+
+    &__first--button--text {
+      font-size: 7px;
+    }
+
+    &__second {
+      position: relative;
+      width: 315px;
+      margin: 0;
+    }
+
+    &__second--text1 {
+      position: absolute;
+      font-size: 16px;
+      padding-bottom: 18px;
+    }
+
+    &__second--text2 {
+      font-size: 9px;
+      padding-left: 68px;
+      padding-right: 16px;
+    }
+
+    &__second--text3 {
+      font-size: 8px;
+      padding-left: 68px;
+      padding-right: 60px;
+    }
+
+    &__second--text4 {
+      font-size: 9px;
+      padding-left: 68px;
+      padding-bottom: 27px;
+      padding-right: 27px;
+    }
+
+    &__second--text5 {
+      font-size: 9px;
+      padding-left: 227px;
+    }
+  }
+}
+
+.section18 {
+  @media (min-width: 1200px) {
+    width: 715px;
+    padding: 0;
+    margin-bottom: 110px;
+
+    &__wrraper {
+      width: 732px;
+    }
+
+    &__first {
+      width: 325px;
+    }
+
+    &__first--text1 {
+      font-size: 30px;
+    }
+
+    &__first--text2 {
+      font-size: 10px;
+      padding-right: 52px;
+
+      &::before {
+        width: 32px;
+        height: 3px;
+      }
+    }
+
+    &__first--button {
+      width: 162px;
+      height: 31px;
+      background-color: $orange-color;
+      -webkit-box-shadow: 0 9px 13px rgba(196, 87, 15, 0.26);
+      -moz-box-shadow: 0 9px 13px rgba(196, 87, 15, 0.26);
+      box-shadow: 0 9px 13px rgba(196, 87, 15, 0.26);
+    }
+
+    &__first--button--text {
+      font-size: 8px;
+    }
+
+    &__second {
+      width: 348px;
+      margin: 0;
+      margin-right: 62px;
+    }
+
+    &__second--text1 {
+      font-size: 19px;
+    }
+
+    &__second--text2 {
+      font-size: 10px;
+    }
+
+    &__second--text3 {
+      font-size: 9px;
+      padding-right: 68px;
+    }
+
+    &__second--text4 {
+      font-size: 10px;
+    }
+
+    &__second--text5 {
+      font-size: 10px;
+    }
+  }
+}
